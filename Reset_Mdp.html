@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+
+    <meta charset="utf-8">
+    <script src="./script/Connexion_user.php"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/JScare.css">
+    <title>Bouh!</title>
+    <?php
+
+function Validation($Mdp1, $Mdp2)
+{
+if($Mdp1 == $Mdp2)
+    {
+        $Message=echo'votre mot de passe a été changé!';
+        Return $Message;
+    }
+else
+    {
+        $Message=echo'Les mots de passe ne sont pas identiques!';        
+         Return $Message;
+    }
+    echo $Message;
+}
+?>
+  </head>
+  <body>
+
+
+    <div class="Titre"><h1 class="manrope-Title">Connexion</h1></div>
+      <form class="Form-Insc" method="post" action="script/Connexion_user.php">
+        <fieldset>
+            <legend>Changement de mot de passe</legend>
+
+        <label for="Mdp_cache_User">Mot de passe</label>
+        <input type="password" name="UMdP" placeholder="*******" id="MdP_cache_User" required>
+
+        <label for="UMdP">Répéter mot de passe</label>
+        <input type="password" name="UMdP" placeholder="*******" id="MdP_User" required>
+        </fieldset>
+        <br>
+        <br>
+        <input type="submit" name="Bo_Bu" value="Je change mon mot de passe" onclick="Validation(MdP_cache_User, MdP_User)">
+        
+        <input type="reset" name="Bo_Bu"value="reset">
+      </form>
+
+
+    <footer>
+          <ul>
+              <li><h2><a href="index.html#Haut" title="Haut de page">Retour</a></h2></li>
+              <li><h2><a href="Page0.html" title="Inscription">Inscription</a></h2></li>
+    
+        </ul>
+    </footer>
+
+
+  </body>
+</html>

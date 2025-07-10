@@ -1,0 +1,429 @@
+/*Hey*/
+
+
+/*------------------------------------ Blocks ------------------------------------*/
+
+
+.Header
+{
+    display:flex;
+    flex-flow:row;
+    justify-content:space-between;
+    width:100%;
+}
+.Header h1
+{
+    float:center;
+    margin-left:5%;
+    font-weight:1000;
+    color:white;
+    position: relative;
+    align-self:center;
+    text-wrap:wrap;
+}
+.Header img.Profil
+{
+    display:block;
+    margin:2%;
+    border-radius:9px;
+    height:200px;
+    width:210px;
+    margin-block-end:5%;
+    margin-block-start:5%;
+}
+.Header img.Profil:hover
+{
+  border-radius:25px;
+      content:url("https://www.looper.com/img/gallery/ghosts-star-rose-mciver-went-to-battle-as-a-power-ranger-before-the-hit-sitcom/power-rangers-rpm-is-considered-one-of-the-best-seasons-of-the-fanchise-1670538012.jpg");
+ 
+}
+
+.Header img:not(.Profil)
+{
+    width:fit-content;
+    position:absolute;
+    z-index:-1;
+    left:0;
+    width:100%;
+    overflow:hidden;
+    margin:auto;
+    
+}
+
+section , .contact 
+{
+    background-color: rgb(233, 210, 183);
+}
+
+.contact
+{
+    border-radius: 9px;
+    padding:10px;
+    margin-left:2%;
+    margin-top:2%;
+    margin-bottom:auto;
+}
+
+.contact li
+{
+    font: bold 15px Helvetica , sans-serif;
+    list-style-position:inside;
+}
+.contact ul
+{
+    margin:0;
+    padding:5%;
+}
+
+
+.contact li:hover
+{
+    color:tomato;
+}
+
+.Header_center
+{
+    display:flex;
+    flex:column;
+    justify-content:space-around;
+}
+
+.content
+{
+    border-style:none;
+    overflow:hidden;
+}
+
+
+
+    
+
+/* ------------------------------------Navigation------------------------------------ */
+
+    .barre_navigation
+{
+    display:flex;
+    position:sticky;
+    list-style-type:none;
+    background-image:linear-gradient(to right, rgb(221, 75, 50), rgb(255, 176, 73));
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+
+
+.barre_navigation a
+{
+    text-decoration:none;
+    color:aliceblue;
+    padding:16.8px;
+}
+.barre_navigation h2
+{
+    text-decoration:none;
+    color:aliceblue;
+    font-size: large;
+    font-weight:600;
+    margin:10px;
+    padding:20px;
+}
+.barre_navigation a:hover
+{
+    text-decoration:dotted;
+    border-color:white;
+    background-color:rgb(255, 243, 191);
+    color:black;
+    border-radius:9px;
+}
+
+/* #slct_R
+{
+
+}
+
+#slct_L
+{
+
+} */
+
+/* ------------------------------------Corps de page ---------------------------------*/
+
+.Milieu
+{
+    display:flex;
+    flex-flow: row;
+
+}
+
+.Competences
+{
+    font: 15px Helvetica, sans-serif;
+}
+
+aside
+{
+    position:relative;
+    display:flex;
+    flex-flow:column;
+    justify-content:flex-start;
+    background-image:linear-gradient(to right, rgb(221, 75, 50), rgb(255, 176, 73));
+    margin:auto;
+    padding:3%;;
+    border-radius:9px;
+    width:25%;
+    top:0px;
+
+}
+aside li:hover
+{
+    color:white;
+
+}
+
+aside ul
+{
+        list-style-type:square;
+        margin:5px;
+        padding:5px;
+
+}
+
+aside ul ul
+{
+
+     list-style-position:inside;
+}
+aside ol
+{
+    justify-content:left;
+    list-style-position:inside;
+    margin:5px;
+    padding:5px;
+}
+
+aside h5
+{
+    margin:0px;
+    padding:0;
+
+}
+
+/* ------------------------------------Section------------------------------------ */
+
+section
+{
+    font: bold small Helvetica , sans-serif;
+    position:relative;
+    border-radius:9px;
+   padding:40px;
+   /* margin:auto; */
+   width:60%;
+   
+   height:100%;
+}
+
+section:hover
+{
+    border:dashed rgb(255, 255, 255);
+    padding:35px;
+}
+
+section p b em
+{
+    align-text:right;
+}
+
+/* ------------------------------------Bas de page ------------------------------------*/
+
+footer
+{
+    background-color:tomato;
+    position:sticky;
+    bottom:0px;
+    width:100%;
+}
+
+footer ul
+{
+    display: flex;
+    flex-flow: row space-between;
+    justify-content:center;
+    list-style-type: none;
+}
+footer ul li a
+{
+    text-decoration:none;
+    color:aliceblue;
+    margin:20px;
+}
+footer ul li a:hover
+{
+    text-decoration:underline;
+    color:aliceblue;
+    margin:20px;
+}
+
+
+
+/* ------------------------------------Textes------------------------------------ */
+
+
+
+
+body
+{
+    background-color:rgb(255, 241, 220);
+
+    padding:0;
+    margin:0;
+    
+}
+
+h2
+
+{
+    font-style:italic;
+    font:medium bold Helvetica , sans-serif;
+    
+}
+
+p
+{
+     font:small Helvetica bold, sans-serif;
+}
+
+.manrope-Title 
+{
+  font-family: "Manrope", sans-serif;
+  font-size:4em ;
+  font-weight: 400;
+  font-style: normal;
+}
+.Jumpscare
+{
+    display:block;
+    padding:10em;
+    margin:auto;
+}
+
+
+/*404*/
+
+.Centre
+{
+    position:absolute;
+    top:500px;
+    left:40%;
+    display:flex;
+    align-self:center;
+    justify-content:center;
+    flex-flow:column;
+    text-align:center;
+
+}
+
+/* ------------------------------------Responsive------------------------------------ */
+
+
+
+@media(max-width:1000px)
+{
+    .Header h1
+    {
+        Font-Size:3em;
+        font-weight:600;
+        color:white;
+    }
+}
+
+@media(max-width:600px)
+{
+    *
+    {
+        margin:0;
+        
+    }
+    .Header
+    {
+        Padding:0px;
+        flex-flow:column;
+    }
+
+    .Header h1
+    {
+        Font-Size:2em;
+        font-weight:600;
+        color:white;
+    }
+    .barre_navigation
+    {
+    padding-top:1em;
+    padding-bottom:1em;
+      border-top:dashed;
+      border-color:aliceblue;
+      flex-wrap:nowrap;
+
+    }
+    .barre_navigation h2
+{
+   text-justify: left;
+    color:aliceblue;
+    margin:0px;
+    padding:0px;
+    font-weight:30;
+    font-size: small;
+    text-align: left;
+}
+    .barre_navigation *
+    {
+        padding:0;
+        margin:0;
+        font-size:small;
+    }
+
+    .barre_navigation li h2 a
+    {
+        padding:2px;
+    } 
+
+
+    .Header img:not(.Profil)
+    {
+    width:600px;
+    margin:0;
+    left:0;
+    
+    }
+    .Header img.Profil
+{
+    display:block;
+    margin:2%;
+    border-radius:9px;
+    left:0px;
+    bottom:0;
+    height:100px;
+    width:105px;
+    margin-block-end:5%;
+    margin-block-start:5%;
+
+}
+
+aside
+
+{
+    border-radius: top 0px;
+    background-color: tomato;
+}
+
+section
+{
+    font: bold small Helvetica , sans-serif;
+    position:relative;
+    border-radius:9px;
+   padding:40px;
+   /* margin:auto; */
+ margin-top:0;
+   width:60%;
+   
+   height:100%;
+}
+        }

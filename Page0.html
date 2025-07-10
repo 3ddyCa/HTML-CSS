@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/JScare.css">
+    <title>Bouh!</title>
+  </head>
+  <body>
+
+
+    <div class="Titre"><h1 class="manrope-Title">Inscription</h1></div>
+
+      <!-- Formulaire-->
+
+      <form class="Form-Insc" method="post" action="Informations_user.php">
+
+        <label for="G_H_User">M.</label>
+        <input type="radio" name="Genre" value="Homme" id="G_H_User" required>
+
+        <label for="G_F_User">Mme</label>
+        <input type="radio" name="Genre" value="Femme" id="G_F_User" required>
+
+         <label for="G_A_User">Autre</label>
+        <input type="radio" name="Genre" value="Autre" id="G_A_User" required>
+        <br>
+        <br>
+        <label for="Pseudo_User">Pseudo:</label>
+        <input type="text" name="UPseudo" placeholder="JDup" id="Pseudo_User" pattern="(A-Z)(30)" required>
+
+        <label for="Mail_User">Email:</label>
+        <input type="email" name="UMail" placeholder="JDup@Yahoo.net" id="Mail_User" pattern="\[a-z0-9._-]{2-70}+@[a-z0-9._-]{2-20}\+.[a-z0-9._-]{2-6}" required>
+        
+        <label for="Nom_User">Nom:</label>
+        <input type="text" name="UNom" placeholder="Dupont" id="Nom_User" pattern="(A-Z)(30)" required>
+        
+        <label for="Prenom_User">Prénom:</label>
+        <input type="text" name="UPrenom" placeholder="Jean" id="Prenom_User" pattern="(A-Z)(30)" required>
+       
+        <label for="Adress_User">Adresse:</label>
+        <input type="text" name="UAdress" placeholder="1 chemin de la compote" id="Adress_User" pattern="(A-Z, 0-9)(30)" required>
+        <br>
+        <label for="UDep">Département:</label>
+
+  <select name="UDep" id="Dep_User">
+    <option value="31">31</option>
+    <option value="32">32</option>
+    <option value="31">81</option>
+    <option value="82">82</option>
+  </select>
+
+        <br>
+        <br>
+        <label for="Ville_User">Ville:</label>
+        <input type="text" name="UVille" placeholder="Toulouse" id="Ville_User" pattern="(A-Z)(30)" required>
+        <br>
+        <label for="Tel_User">Téléphone:</label>
+        <input type="tel" name="UTel" placeholder="0600000000" pattern="(0-9)(10)" id="Tel_User" required>
+        <label for="UDate">Date de naissance:</label>
+        <input type="Date" name="UDate" placeholder=" " id="Date_User" max-length="10" required>
+        <br>
+        <label for="MdP_User">Mot de passe:</label>
+        <input type="password" name="UMdP" placeholder="*******" id="MdP_User" required>
+        <br>
+        <label for="Exp_User">Votre profil</label>
+        <br>
+        <br>
+        <textarea id="Exp_User" style="border:none" rows="12" columns="16" ></textarea>
+        <br>
+        <br>
+        <label for="CGU_User">J'accepte les <a href="404.html">conditions d'utilisation</a> du site</label>
+        <input type="checkbox" name="UCGU"  id="CGU_User" required><br>
+        <br>
+        <input type="submit" name="Bo_Bu" value="Submit">
+        
+        <input type="reset" name="Bo_Bu" value="reset">
+      </form>
+
+        <!-- Footer-->
+
+
+    <footer>
+          <ul>
+              <li><h2><a href="index.html#Haut" title="Haut de page">Retour</a></h2></li>
+              <li><h2><a href="Connexion.html" title="Connexion">Connexion</a></h2></li>
+    
+        </ul>
+    </footer>
+
+
+  </body>
+</html>
