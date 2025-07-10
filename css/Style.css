@@ -30,12 +30,19 @@
     width:210px;
     margin-block-end:5%;
     margin-block-start:5%;
+    transition-property:alpha;
+}
+
+.Header img.Profil
+{
+
 }
 .Header img.Profil:hover
 {
   border-radius:25px;
       content:url("https://www.looper.com/img/gallery/ghosts-star-rose-mciver-went-to-battle-as-a-power-ranger-before-the-hit-sitcom/power-rangers-rpm-is-considered-one-of-the-best-seasons-of-the-fanchise-1670538012.jpg");
- 
+        transition-duration:400ms;
+    transition-timing-function:ease-in-out;
 }
 
 .Header img:not(.Profil)
@@ -49,6 +56,8 @@
     margin:auto;
     
 }
+
+
 
 section , .contact 
 {
@@ -113,6 +122,7 @@ section , .contact
 
 .barre_navigation a
 {
+     transition-property: background-color;
     text-decoration:none;
     color:aliceblue;
     padding:16.8px;
@@ -129,10 +139,32 @@ section , .contact
 .barre_navigation a:hover
 {
     text-decoration:dotted;
+    transition-duration:400ms;
+    transition-timing-function:ease-in-out;
     border-color:white;
-    background-color:rgb(255, 243, 191);
+    background-color:rgba(255, 243, 191,1.0);;
     color:black;
     border-radius:9px;
+}
+
+.Selection
+{
+    text-decoration:none;
+    transition-property: background-color;
+    color:aliceblue;
+    padding:16.8px;
+}
+
+.Selection:hover
+{   
+    
+    transition-duration:300ms;
+    text-decoration:dotted;
+    border-color:white;
+    background-color:rgba(255, 243, 191,1.0);    
+    color:black;
+    border-radius:9px;
+    cursor: pointer;
 }
 
 /* #slct_R
@@ -217,19 +249,23 @@ section
    padding:40px;
    /* margin:auto; */
    width:60%;
-   
    height:100%;
+   box-shadow: 4px 4px 4px;
+   margin:5px;
 }
 
 section:hover
 {
     border:dashed rgb(255, 255, 255);
     padding:35px;
+    transition-duration:400ms;
+    transition-timing-function:ease-in;
+    cursor: pointer;
 }
 
 section p b em
 {
-    align-text:right;
+    align-items:right;
 }
 
 /* ------------------------------------Bas de page ------------------------------------*/
@@ -259,6 +295,7 @@ footer ul li a:hover
 {
     text-decoration:underline;
     color:aliceblue;
+    cursor:pointer;
     margin:20px;
 }
 
@@ -271,7 +308,12 @@ footer ul li a:hover
 
 body
 {
-    background-color:rgb(255, 241, 220);
+    background-color:rgb(10, 6, 22);
+    background-image:url("https://i.pinimg.com/originals/02/60/c1/0260c1ebd6519c43e8aaf2a347115594.gif");
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:100%;
 
     padding:0;
     margin:0;
@@ -333,6 +375,11 @@ p
         font-weight:600;
         color:white;
     }
+    body
+{
+  background-position:top;
+  background-color:rgb(22, 21, 34);
+}
 }
 
 @media(max-width:600px)
@@ -388,7 +435,6 @@ p
 
     .Header img:not(.Profil)
     {
-    width:600px;
     margin:0;
     left:0;
     
@@ -406,12 +452,18 @@ p
     margin-block-start:5%;
 
 }
+body
+{
+  background-position:top;
+  background-color:rgb(22, 21, 34);
+}
 
 aside
 
 {
-    border-radius: top 0px;
-    background-color: tomato;
+    border-radius: 0px 0px 9px 9px;
+     background-image:linear-gradient(to right, rgb(221, 75, 50), rgb(223, 113, 49));
+    margin:0;
 }
 
 section

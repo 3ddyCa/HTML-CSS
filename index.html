@@ -12,6 +12,30 @@
 		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
         <script src="./Script/Script.js"></script>
 		<title>Salut</title>
+		<script>
+			Bibliotheque = [
+				"https://i.ytimg.com/vi/J1kj11DfHfM/sddefault.jpg",
+				"https://picsum.photos/200/300?random=1",
+				"https://picsum.photos/200/300?random=2",
+				"https://picsum.photos/200/300?random=3",
+				"https://picsum.photos/200/300?random=4"
+			];
+
+			function Switchright(Choosin)
+			{
+			let newChoosin = parseInt(Choosin)+1;
+			document.getElementById("Profil").src = Bibliotheque(newChoosin);
+			document.getElementById("Profil").name = newChoosin;
+			return alert(newChoosin);
+			}
+			function Switchleft(Choosin)
+			{
+			let newChoosin = parseInt(Choosin)-1;
+			document.getElementById("Profil").src = Bibliotheque(newChoosin);
+			document.getElementById("Profil").name = newChoosin;
+			return alert(newChoosin);
+			}
+		</script>
 	</head>
 	<body>
 		<header>
@@ -31,16 +55,15 @@
 					
 				</div>
 				<div class="Header_center">
-				<h1 Class="manrope-Title">Développeur web</h1>
-				<img src="https://i.pinimg.com/originals/02/60/c1/0260c1ebd6519c43e8aaf2a347115594.gif" alt="animation de feu">
+				<h1 class="manrope-Title">Développeur web</h1>
 				</div>
-				<img class="Profil" src="https://i.ytimg.com/vi/J1kj11DfHfM/sddefault.jpg" width="142px" height="160px" alt="Photo de profil">
+				<img class="Profil" src="https://i.ytimg.com/vi/J1kj11DfHfM/sddefault.jpg" name=0 width="142px" height="160px" alt="Photo de profil">
 			</div>
 			<nav>
 				<ul class="barre_navigation">
 						<h2 id="Nom">Eddy Carbet</h2>
-						<li><h2><a id="slct_L"href="404.html"><-Select</a></h2></li>
-						<li><h2><a id="slct_R" href="404.html">Select-></a></h2></li>
+						<li><h2 class="Selection" onclick="Switchleft(document.getElementById('Profil').name)"><-Select</h2></li>
+						<li><h2 class="Selection" onclick="Switchright(document.getElementById('Profil').name)">Select-></h2></li>
 						<li><h2><a href="Connexion.html">Connexion</a></h2></li>
 						<li><h2><a href="https://abraezaks.wixsite.com/accueil" target="_blank" title="Lien vers une autre page">Site perso</a></h2></li>
 						<li><h2><a href="index.html#Fin" title="Bas de page">Bas</a></h2></li>
@@ -121,7 +144,7 @@
 		<footer class="Fin" id="Fin">
 			<ul>
 
-				<li><h2><a href="404.html">CGU</a></h2></li>
+				<li><h2><a href="CGU.html">CGU</a></h2></li>
 				<li><h2><a href="mailto:abraezaks@gmail.com">Contact</a></h2></li>
 				<li><h2><a href="index.html#Header" title="Bas de page">Haut</a></h2></li>
 			</ul>

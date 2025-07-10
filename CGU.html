@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model en CSS</title>
+    <style>
+        .container{
+    width: 75%;
+    background-color: rgba(128, 255, 0, 0.438);
+    color: rgb(255, 253, 146);
+	border-radius:2em;
+	margin-top:5%;
+	padding:2em;
+	font-weight:1000;
+	display:grid;
+	grid-template-columns: 1fr 2fr 2fr 1fr;
+	grid-template-rows: 1fr;
+	grid-area:1/1/6/6;
+}
+
+h1{
+    background-color: rgba(68, 133, 133, 0.534);
+	color:chartreuse;
+	border: dotted black;
+	padding:1em;
+	text-align:center;
+}
+p
+{
+overflow:hidden;
+word-wrap:break-word;
+margin:5px;
+background-color:tomato;
+}
+
+body
+{
+	margin:0;
+	padding:0;
+	background-image: linear-gradient(to top, tomato, chartreuse)
+}
+    </style>
+</head>
+<body>
+    <h1>TITRE 1</h1>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ullam, necessitatibus repellendus aspernatur soluta eligendi voluptatem repudiandae illo libero enim quam, perspiciatis voluptates. Ad ratione aut, nobis rem ullam aliquid?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ullam, necessitatibus repellendus aspernatur soluta eligendi voluptatem repudiandae illo libero enim quam, perspiciatis voluptates. Ad ratione aut, nobis rem ullam aliquid?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ullam, necessitatibus repellendus aspernatur soluta eligendi voluptatem repudiandae illo libero enim quam, perspiciatis voluptates. Ad ratione aut, nobis rem ullam aliquid?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ullam, necessitatibus repellendus aspernatur soluta eligendi voluptatem repudiandae illo libero enim quam, perspiciatis voluptates. Ad ratione aut, nobis rem ullam aliquid?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ullam, necessitatibus repellendus aspernatur soluta eligendi voluptatem repudiandae illo libero enim quam, perspiciatis voluptates. Ad ratione aut, nobis rem ullam aliquid?</p>
+    </div>
+	<footer>
+          <ul>
+              <li><h2><a href="index.html#Haut" title="Haut de page">Retour</a></h2></li>
+              <li><h2><a href="Connexion.html" title="Connexion">Connexion</a></h2></li>
+    
+        </ul>
+    </footer>
+
+</body>
+</html>

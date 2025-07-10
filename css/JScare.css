@@ -27,6 +27,7 @@ h1
     display:block;
     justify-self: center;
     position:relative;
+    text-shadow: 4 4 4;
 }
 p
 {
@@ -45,6 +46,7 @@ legend
   font-weight: 600;
   font-style: normal;
   text-wrap: wrap;
+  
 }
 
 .Titre
@@ -63,6 +65,17 @@ legend
     display:block;
     align-self:center;
 }
+/*-----------------------------------------------Formulaire---------------------------------------*/
+
+fieldset
+{
+    padding:3em;
+    border-radius:1em;
+    border-width:3px;
+    border-color:tomato;
+    box-shadow: none;
+    font: bold 1em Helvetica, sans-serif;
+}
 
 .Form-Insc
 {
@@ -74,7 +87,17 @@ legend
     font-family:Helvetica, sans-serif;
 
 }
+.Form-Insc:not(fieldset)
+{
+    position:relative;
+    bottom:2em;
+}
 
+input
+{
+ border-radius:4px;
+ padding:0.5em;
+}
 input:not(input[name="Genre"], input[name="Remember"], input[name="Bo_Bu"],input[name="UTel"],input[name="UDate"],input[name="UMail"],input[name="UMdP"])
 {
     width:20em;
@@ -95,15 +118,30 @@ input[name="Genre"] , input[name="Remember"]
     font-family:Helvetica, sans-serif;
 }
 
+
+
 input[name="Bo_Bu"]
 {
     justify-items:center;
-   align-self: row;
     padding:1em;
-    width:10em;
+    width:fit-content;
     border-radius:9px;
     background-color:tomato;
+    font: bold 1em Helvetica, sans-serif;   
+    border-style:solid;
+    cursor:pointer;
 } 
+
+input[name="Bo_Bu"]:hover
+{
+    color:white;
+}
+
+label
+{
+    font: bold 1em Helvetica tomato , sans-serif;  
+}
+/*-----------------------------------------------Footer---------------------------------------*/
 footer
 {
     position:sticky;
